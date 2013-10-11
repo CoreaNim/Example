@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+    function compute(){
+        var nanum = 13195;
+        var max = 13195;
+        var current = 2;
+        var big = 0;
+       // while ( current < max) {
+            for ( var i = current; i<max; i++ ){
+                if ( i < nanum && nanum%i == 0 ){
+                    //alert ( nanum + " / " + i + " = " + nanum/i);
+                    nanum = nanum/i;
+                    if ( i > big ){
+                        big = i;
+                    }
+                }
+            }
+         //   current++
+            //alert("2"+current);
+        //}
+        alert(big + " " + nanum);
+
+        // max 600851475143 로 계산시 뻗음...-_-;
+    }
+
+</script>
+<head>
+    <title></title>
+</head>
+<body>
+<button onClick="javascript:compute();">실행</button>
+<div>
+
+</div>
+</body>
+</html>

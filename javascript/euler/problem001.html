@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+    function compute(){
+        var total = 0;
+        for ( var count = 0; count < 1000; count++){
+            if ( count % 3 === 0 || count % 5 === 0 ){
+                total += count;
+            }
+        }
+        alert(total);
+    }
+
+</script>
+<head>
+    <title></title>
+</head>
+<body>
+    <button onClick="javascript:compute();">실행</button>
+    <div>
+
+    </div>
+</body>
+</html>

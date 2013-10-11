@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script>
+
+    function compute(){
+        var max = 2000000;
+        var current = 3;
+        var total = 2;
+        while ( current <= max){
+            //alert ( current );
+            for ( var i=2; i< current; i++){
+                if ( current%i == 0 ){
+                    break;
+                }else{
+                    if ( i == current-1 ){
+                        total += current;
+                    }
+                }
+            }
+            current++
+        }
+        alert ( total );
+
+    }
+
+
+</script>
+
+<head>
+    <title></title>
+</head>
+<body>
+<button onClick="javascript:compute();">실행</button>
+<div id="problemText">
+</div>
+</body>
+</html>

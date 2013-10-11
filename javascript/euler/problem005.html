@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<script>
+    var start = 2;
+    var end = 20;
+
+    function compute(){
+
+        for (var i=start; true; i++){
+            if ( check(i)  ){
+                alert(i);
+                break;
+            }
+        }
+    }
+
+    function check(num){
+        for (var j=start; j<=end; j++){
+            if ( !(num%j == 0) ){
+                return false;
+            }
+        }
+        return true;
+    }
+
+//    특별한 로직없이 2~20까지 차례로 나누었을 때 모두 만족할 경우 성공
+
+</script>
+<head>
+    <title></title>
+</head>
+<body>
+<button onClick="javascript:compute();">실행</button>
+<div>
+
+</div>
+</body>
+</html>

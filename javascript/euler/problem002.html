@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<script>
+
+    function compute(){
+        var temp = 0;
+        var preVal = 0;
+        var currentVal = 1;
+        var sum = 0;
+        var temp = 0;
+        while( currentVal <= 4000000 ){
+            temp = preVal + currentVal;
+            preVal = currentVal;
+            currentVal = temp;
+            if ( currentVal % 2 === 0 ){
+                sum += currentVal;
+            }
+        }
+        alert ( sum );
+    }
+
+
+</script>
+<head>
+    <title></title>
+</head>
+<body>
+<button onClick="javascript:compute();">실행</button>
+<div>
+
+</div>
+</body>
+</html>
