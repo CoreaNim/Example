@@ -6,9 +6,11 @@ import store from './common/store';
 
 export default function App() {
   return (
-    <div>
-      <FriendMain />
-      <TimelineMain />
-    </div>
+    <Provider store={store}>
+      <div>
+        <FriendMain />
+        <TimelineMain />
+      </div>
+    </Provider>
   );
 }
