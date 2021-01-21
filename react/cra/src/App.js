@@ -1,12 +1,14 @@
-import React, { useState } from 'react';
-import WidthPrinter from './hook/widthPrinter';
+import React from 'react';
+import FriendMain from './friend/container/FriendMain';
+import TimelineMain from './timeline/container/TimelineMain';
+import { Provider } from 'react-redux';
+import store from './common/store';
 
 export default function App() {
-  const [count, setCount] = useState(0);
   return (
-    <>
-      {count === 0 && <WidthPrinter />}
-      <button onClick={() => setCount(count + 1)}>증가</button>
-    </>
+    <div>
+      <FriendMain />
+      <TimelineMain />
+    </div>
   );
 }
