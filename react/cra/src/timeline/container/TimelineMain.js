@@ -1,8 +1,9 @@
-import React, { useEffect, useReducer } from 'react';
+import React from 'react';
 import store from '../../common/store';
 import { getNextTimeline } from '../../common/mockData';
 import { addTimeline } from '../state';
 import TimelineList from '../component/TimelineList.js';
+import { useSelector } from 'react-redux';
 
 export default function TimelineMain() {
   const timelines = useSelector((state) => state.timeline.timelines);
